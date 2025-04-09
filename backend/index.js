@@ -42,7 +42,7 @@ app.get("/todos", async(req,res)=>{
 app.get("/todo/:id", async(req,res)=>{
     const id = req.params.id;
     const todoItem = await todo.findOne({
-        id : id
+        _id : id
     })    
     res.json({
         todo : todoItem
