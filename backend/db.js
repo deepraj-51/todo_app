@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://thakurdeepraj51:kzMRVrdH6-d2ZU@cluster0.j4pmv.mongodb.net/todos");
+mongoose.connect(process.env.MONGODB_URI);
 
 const todoSchema = mongoose.Schema({    
     id : Number,
