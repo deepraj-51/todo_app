@@ -1,1 +1,0 @@
-this is a basic work to exploring how to deploy a project.
